@@ -1,0 +1,22 @@
+
+<input type="text" id="num" value="">
+<button onclick="getarea()"  > Get area of circle
+</button>
+<button onclick ="getcircumference()"> Get circcumference of circle 
+    
+
+</button>
+<h1 id ="result"></h1>
+
+<script>
+    function getarea() {
+        x = document.getElementById("num").value 
+        output = `Area of circle with radis ${x} is ${3.14*x*x}`
+        // alert(x)
+        document.getElementById("result").innerHTML = output}
+    function getcircumference() {
+        x = document.getElementById("num").value
+        output = `Circumference of circle with radius ${x} is ${2*3.14*x}`
+        document.getElementById("result").innerHTML = output
+    }
+</script>
